@@ -1,32 +1,115 @@
-.App {
+body {
   text-align: center;
+  background-color: #282c34;
+  color: white;
+  font-family: 'Raleway';
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+#App-title {
+  font-family: 'Righteous';
+  font-size: 80px;
+  margin: 10px 0 0 20px !important;
+  float: left;
+  animation: App-logo 5s infinite;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 90%;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  font-family: 'Raleway';
+  font-size: 25px;
+  width: 40%;
+  height: 45px;
+  letter-spacing: 1.5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#details {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+#search-bar {
+  font-size: 15px;
+  width: 250px;
+  height: 30px;
+  letter-spacing: 1px;
+  float: right;
+  margin: 20px 10px;
+}
+
+#add-note {
+  font-family: 'Raleway';
+  cursor: pointer;
+  height: 60px;
+  font-size: 35px;
+  background-color: #67d5b5;
+  color: #282c34;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 700;
+}
+
+#add-note:hover {
+  background-color: #fc6448;
+}
+
+.notes-continer {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+
+.note {
+  max-width: 300px;
+  margin: 20px;
+  padding: 10px;
+  text-align: left;
+  background-color: #ffc952;
+  border-radius: 5px;
+  color: #282c34;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls {
+  cursor: pointer;
+}
+
+#toggle-details:hover {
+  background-color: #67d5b5;
+}
+
+#remove-note:hover {
+  background-color: #fc6448;
+}
+
+.timestamp {
+  font-size: 14px;
+}
+
+.note-title {
+  text-align: center;
+}
+
+.d {
+  font-weight: 700;
+}
+
+@keyframes App-logo {
+  0%, 100% {
+    color: white;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    color: #67d5b5;
   }
 }
